@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectStreams xmlns:m="urn:mtconnect.org:MTConnectStreams:1.3" xmlns="urn:mtconnect.org:MTConnectStreams:1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="urn:mazakusa.com:MazakStreams:1.3" xsi:schemaLocation="urn:mazakusa.com:MazakStreams:1.3 /schemas/MazakStreams_1.3.xsd">
+  <Header creationTime="2024-04-18T15:12:48Z" sender="QT200MY" instanceId="1713366612" version="1.4.0.10" bufferSize="131072" nextSequence="358152" firstSequence="227080" lastSequence="358151"/>
+  <Streams>
+    <DeviceStream name="Mazak" uuid="M80126L214N">
+      <ComponentStream component="Axes" name="base" componentId="a">
+        <Condition>
+          <Normal dataItemId="servo" timestamp="2024-04-18T06:06:24.239067Z" name="servo_cond" sequence="70" type="ACTUATOR"/>
+          <Normal dataItemId="spndl" timestamp="2024-04-18T06:06:24.239067Z" name="spindle_cond" sequence="79" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Rotary" name="C" componentId="c">
+        <Samples>
+          <AngularVelocity dataItemId="cf" timestamp="2024-04-18T15:02:52.804578Z" name="Cfrt" sequence="357459">0</AngularVelocity>
+          <Load dataItemId="cl" timestamp="2024-04-18T15:02:38.675154Z" name="Cload" sequence="357235">0</Load>
+          <Angle dataItemId="cposm" timestamp="2024-04-18T15:02:54.335032Z" name="Cabs" sequence="357494" subType="ACTUAL">0</Angle>
+          <Angle dataItemId="cposw" timestamp="2024-04-18T15:02:54.335032Z" name="Cpos" sequence="357495" subType="ACTUAL">0</Angle>
+          <RotaryVelocity dataItemId="cs" timestamp="2024-04-18T15:03:17.890410Z" name="Srpm" sequence="357736" subType="ACTUAL">0</RotaryVelocity>
+          <Temperature dataItemId="ctemp" timestamp="2024-04-18T15:12:43.345599Z" name="Stemp" sequence="358148">32</Temperature>
+          <Load dataItemId="sl" timestamp="2024-04-18T15:03:17.434980Z" name="Sload" sequence="357726">0</Load>
+        </Samples>
+        <Events>
+          <AxisState dataItemId="caxisstate" timestamp="2024-04-18T15:02:54.335032Z" sequence="357496">HOME</AxisState>
+          <RotaryMode dataItemId="rf" timestamp="2024-04-18T15:02:54.335032Z" name="crfunc" sequence="357497">SPINDLE</RotaryMode>
+        </Events>
+        <Condition>
+          <Normal dataItemId="ct" timestamp="2024-04-18T06:06:24.239067Z" name="Ctravel" sequence="84" type="ANGLE"/>
+          <Normal dataItemId="spc" timestamp="2024-04-18T15:00:52.601384Z" name="Sload_cond" sequence="355628" type="LOAD"/>
+          <Normal dataItemId="tmp" timestamp="2024-04-18T15:06:06.250353Z" name="Stemp_cond" sequence="357999" type="TEMPERATURE"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Controller" name="controller" componentId="cont">
+        <Samples>
+          <AccumulatedTime dataItemId="atime" timestamp="2024-04-18T15:12:44.253462Z" name="auto_time" sequence="358149" subType="x:AUTO">5321127</AccumulatedTime>
+          <AccumulatedTime dataItemId="ctime" timestamp="2024-04-18T15:03:10.260161Z" name="cut_time" sequence="357647" subType="x:CUT">3201933</AccumulatedTime>
+          <AccumulatedTime dataItemId="tcltime" timestamp="2024-04-18T06:06:24.240069Z" name="total_auto_cut_time" sequence="120" subType="x:TOTALCUTTIME">0</AccumulatedTime>
+          <AccumulatedTime dataItemId="yltime" timestamp="2024-04-18T15:10:49.106070Z" name="total_time" sequence="358113" subType="x:TOTAL">15203313</AccumulatedTime>
+        </Samples>
+        <Events>
+          <EmergencyStop dataItemId="estop" timestamp="2024-04-18T06:06:24.240069Z" name="estop" sequence="89">ARMED</EmergencyStop>
+          <PalletId dataItemId="pltnum" timestamp="2024-04-18T06:06:24.240069Z" name="pallet_num" sequence="90">0</PalletId>
+        </Events>
+        <Condition>
+          <Normal dataItemId="ccond" timestamp="2024-04-18T06:06:24.239067Z" name="comms_cond" sequence="71" type="COMMUNICATIONS"/>
+          <Normal dataItemId="logic" timestamp="2024-04-18T13:27:29.241127Z" name="logic_cond" sequence="282878" type="LOGIC_PROGRAM"/>
+          <Normal dataItemId="system" timestamp="2024-04-18T06:08:33.767121Z" name="system_cond" sequence="210" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Coolant" name="coolant" componentId="coolant">
+        <Samples>
+          <Concentration dataItemId="concentration" timestamp="2024-04-17T15:10:12.862735Z" name="CONCENTRATION" sequence="8">UNAVAILABLE</Concentration>
+          <Temperature dataItemId="cooltemp" timestamp="2024-04-17T15:10:12.862735Z" name="cooltemp" sequence="10">UNAVAILABLE</Temperature>
+        </Samples>
+        <Condition>
+          <Normal dataItemId="coolhealth" timestamp="2024-04-18T06:06:24.239067Z" name="coolant_cond" sequence="77" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Device" name="Mazak" componentId="d1">
+        <Events>
+          <Availability dataItemId="avail" timestamp="2024-04-18T06:06:24.240069Z" name="avail" sequence="85">AVAILABLE</Availability>
+          <AssetChanged dataItemId="d1_asset_chg" timestamp="2024-04-17T15:10:12.862735Z" sequence="17" assetType="">UNAVAILABLE</AssetChanged>
+          <AssetRemoved dataItemId="d1_asset_rem" timestamp="2024-04-17T15:10:12.862735Z" sequence="18" assetType="">UNAVAILABLE</AssetRemoved>
+          <FunctionalMode dataItemId="functionalmode" timestamp="2024-04-18T06:06:24.240069Z" name="functionalmode" sequence="86">UNAVAILABLE</FunctionalMode>
+        </Events>
+      </ComponentStream>
+      <ComponentStream component="Door" name="door" componentId="door1">
+        <Events>
+          <DoorState dataItemId="door" timestamp="2024-04-18T15:03:23.645878Z" name="doorstate" sequence="357749">UNLATCHED</DoorState>
+        </Events>
+      </ComponentStream>
+      <ComponentStream component="Electric" name="electric" componentId="elec">
+        <Condition>
+          <Normal dataItemId="electric" timestamp="2024-04-18T06:06:24.239067Z" name="electric_cond" sequence="76" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Hydraulic" name="hydraulic" componentId="hydraulic">
+        <Condition>
+          <Normal dataItemId="hydhealth" timestamp="2024-04-18T06:06:24.239067Z" name="hydra_cond" sequence="75" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Lubrication" name="lubrication" componentId="lubrication">
+        <Condition>
+          <Normal dataItemId="lube" timestamp="2024-04-18T06:06:24.239067Z" name="lubrication_cond" sequence="78" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Path" name="path" componentId="path1">
+        <Samples>
+          <PathFeedrate dataItemId="pf" timestamp="2024-04-18T15:03:14.850522Z" name="Fact" sequence="357693" subType="ACTUAL">0</PathFeedrate>
+        </Samples>
+        <Events>
+          <RotaryVelocityOverride dataItemId="Sovr" timestamp="2024-04-18T06:06:24.240069Z" name="Sovr" sequence="104">100</RotaryVelocityOverride>
+          <Execution dataItemId="exec" timestamp="2024-04-18T15:03:17.890410Z" name="execution" sequence="357727">PROGRAM_STOPPED</Execution>
+          <ChuckState dataItemId="hd1chuckstate" timestamp="2024-04-18T06:06:24.240069Z" sequence="119">UNAVAILABLE</ChuckState>
+          <Line dataItemId="ln" timestamp="2024-04-18T06:06:24.240069Z" name="line" sequence="98">0</Line>
+          <ControllerMode dataItemId="mode" timestamp="2024-04-18T13:27:26.964965Z" name="mode" sequence="282872">AUTOMATIC</ControllerMode>
+          <PartCount dataItemId="pc" timestamp="2024-04-18T15:03:15.152808Z" name="PartCountAct" sequence="357694">284</PartCount>
+          <ProgramComment dataItemId="pcmt" timestamp="2024-04-18T06:06:24.240069Z" name="program_cmt" sequence="93">CL362-72*HPQ0279*REV.1*OP10*PUNTALE MANIPOLO</ProgramComment>
+          <ProgramEdit dataItemId="peditmode" timestamp="2024-04-17T15:10:12.862735Z" sequence="34">UNAVAILABLE</ProgramEdit>
+          <ProgramEditName dataItemId="peditname" timestamp="2024-04-17T15:10:12.862735Z" sequence="35">UNAVAILABLE</ProgramEditName>
+          <PathFeedrateOverride dataItemId="pfo" timestamp="2024-04-18T13:28:03.357538Z" name="Fovr" sequence="283006" subType="PROGRAMMED">100</PathFeedrateOverride>
+          <PathFeedrateOverride dataItemId="pfr" timestamp="2024-04-18T13:27:59.262647Z" name="Frapidovr" sequence="282996" subType="RAPID">100</PathFeedrateOverride>
+          <Program dataItemId="pgm" timestamp="2024-04-18T06:06:24.240069Z" name="program" sequence="92">55000138</Program>
+          <x:SequenceNumber dataItemId="seq" timestamp="2024-04-18T15:02:52.804578Z" name="sequenceNum" sequence="357451">0</x:SequenceNumber>
+          <ProgramComment dataItemId="spcmt" timestamp="2024-04-17T15:10:12.862735Z" name="subprogram_cmt" sequence="47" subType="x:SUB">UNAVAILABLE</ProgramComment>
+          <Program dataItemId="spgm" timestamp="2024-04-17T15:10:12.862735Z" name="subprogram" sequence="48" subType="x:SUB">UNAVAILABLE</Program>
+          <ToolNumber dataItemId="tid" timestamp="2024-04-18T15:03:16.363960Z" name="Tool_number" sequence="357703">1</ToolNumber>
+          <x:ToolGroup dataItemId="tid1" timestamp="2024-04-18T06:06:24.240069Z" name="Tool_group" sequence="96">0</x:ToolGroup>
+          <x:ToolSuffix dataItemId="tsuf1" timestamp="2024-04-18T06:06:24.240069Z" name="Tool_suffix" sequence="95">A</x:ToolSuffix>
+          <x:Unit dataItemId="unit" timestamp="2024-04-18T15:03:15.152808Z" name="unitNum" sequence="357695">2</x:Unit>
+        </Events>
+        <Condition>
+          <Normal dataItemId="motion" timestamp="2024-04-18T06:06:24.239067Z" name="motion_cond" sequence="80" type="MOTION_PROGRAM"/>
+          <Normal dataItemId="path_system" timestamp="2024-04-18T06:06:24.239067Z" name="path_system" sequence="81" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Pneumatic" name="pneumatic" componentId="pneumatic">
+        <Condition>
+          <Normal dataItemId="pneucond" timestamp="2024-04-18T06:06:24.239067Z" name="pneu_cond" sequence="74" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Linear" name="X" componentId="x">
+        <Samples>
+          <AxisFeedrate dataItemId="xf" timestamp="2024-04-18T15:03:17.890410Z" name="Xfrt" sequence="357729">0</AxisFeedrate>
+          <Load dataItemId="xl" timestamp="2024-04-18T15:11:50.250157Z" name="Xload" sequence="358129">26</Load>
+          <Position dataItemId="xpm" timestamp="2024-04-18T15:03:17.890410Z" name="Xabs" sequence="357730" subType="ACTUAL">-394.1888</Position>
+          <Position dataItemId="xpw" timestamp="2024-04-18T15:03:17.434980Z" name="Xpos" sequence="357718" subType="ACTUAL">0</Position>
+        </Samples>
+        <Events>
+          <AxisState dataItemId="xaxisstate" timestamp="2024-04-18T15:03:17.890410Z" sequence="357731">STOPPED</AxisState>
+        </Events>
+        <Condition>
+          <Normal dataItemId="xt" timestamp="2024-04-18T06:06:24.239067Z" name="Xtravel" sequence="82" type="POSITION"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Linear" name="Z" componentId="z">
+        <Samples>
+          <AxisFeedrate dataItemId="zf" timestamp="2024-04-18T15:03:17.890410Z" name="Zfrt" sequence="357733">0</AxisFeedrate>
+          <Load dataItemId="zl" timestamp="2024-04-18T15:12:44.555749Z" name="Zload" sequence="358151">3</Load>
+          <Position dataItemId="zpm" timestamp="2024-04-18T15:03:17.890410Z" name="Zabs" sequence="357734" subType="ACTUAL">-478.6252</Position>
+          <Position dataItemId="zpw" timestamp="2024-04-18T15:03:17.434980Z" name="Zpos" sequence="357723" subType="ACTUAL">0.2</Position>
+        </Samples>
+        <Events>
+          <AxisState dataItemId="zaxisstate" timestamp="2024-04-18T15:03:17.890410Z" sequence="357735">STOPPED</AxisState>
+        </Events>
+        <Condition>
+          <Normal dataItemId="zt" timestamp="2024-04-18T06:06:24.239067Z" name="Ztravel" sequence="83" type="POSITION"/>
+        </Condition>
+      </ComponentStream>
+    </DeviceStream>
+  </Streams>
+</MTConnectStreams>
+

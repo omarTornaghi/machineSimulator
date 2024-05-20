@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectStreams xmlns:m="urn:mtconnect.org:MTConnectStreams:1.3" xmlns="urn:mtconnect.org:MTConnectStreams:1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="urn:mazakusa.com:MazakStreams:1.3" xsi:schemaLocation="urn:mazakusa.com:MazakStreams:1.3 /schemas/MazakStreams_1.3.xsd">
+  <Header creationTime="2024-04-18T15:14:53Z" sender="QT200MY" instanceId="1713366612" version="1.4.0.10" bufferSize="131072" nextSequence="358543" firstSequence="227471" lastSequence="358542"/>
+  <Streams>
+    <DeviceStream name="Mazak" uuid="M80126L214N">
+      <ComponentStream component="Axes" name="base" componentId="a">
+        <Condition>
+          <Unavailable dataItemId="servo" timestamp="2024-04-18T15:14:45.592961Z" name="servo_cond" sequence="358519" type="ACTUATOR"/>
+          <Unavailable dataItemId="spndl" timestamp="2024-04-18T15:14:45.592961Z" name="spindle_cond" sequence="358522" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Rotary" name="C" componentId="c">
+        <Samples>
+          <AngularVelocity dataItemId="cf" timestamp="2024-04-18T15:14:45.592961Z" name="Cfrt" sequence="358489">UNAVAILABLE</AngularVelocity>
+          <Load dataItemId="cl" timestamp="2024-04-18T15:14:45.592961Z" name="Cload" sequence="358490">UNAVAILABLE</Load>
+          <Angle dataItemId="cposm" timestamp="2024-04-18T15:14:45.592961Z" name="Cabs" sequence="358492" subType="ACTUAL">UNAVAILABLE</Angle>
+          <Angle dataItemId="cposw" timestamp="2024-04-18T15:14:45.592961Z" name="Cpos" sequence="358493" subType="ACTUAL">UNAVAILABLE</Angle>
+          <RotaryVelocity dataItemId="cs" timestamp="2024-04-18T15:14:45.592961Z" name="Srpm" sequence="358494" subType="ACTUAL">UNAVAILABLE</RotaryVelocity>
+          <Temperature dataItemId="ctemp" timestamp="2024-04-18T15:14:45.592961Z" name="Stemp" sequence="358496">UNAVAILABLE</Temperature>
+          <Load dataItemId="sl" timestamp="2024-04-18T15:14:45.592961Z" name="Sload" sequence="358520">UNAVAILABLE</Load>
+        </Samples>
+        <Events>
+          <AxisState dataItemId="caxisstate" timestamp="2024-04-18T15:14:45.592961Z" sequence="358487">UNAVAILABLE</AxisState>
+          <RotaryMode dataItemId="rf" timestamp="2024-04-18T15:14:45.592961Z" name="crfunc" sequence="358517">UNAVAILABLE</RotaryMode>
+        </Events>
+        <Condition>
+          <Unavailable dataItemId="ct" timestamp="2024-04-18T15:14:45.592961Z" name="Ctravel" sequence="358495" type="ANGLE"/>
+          <Unavailable dataItemId="spc" timestamp="2024-04-18T15:14:45.592961Z" name="Sload_cond" sequence="358521" type="LOAD"/>
+          <Unavailable dataItemId="tmp" timestamp="2024-04-18T15:14:45.592961Z" name="Stemp_cond" sequence="358527" type="TEMPERATURE"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Controller" name="controller" componentId="cont">
+        <Samples>
+          <AccumulatedTime dataItemId="atime" timestamp="2024-04-18T15:14:45.592961Z" name="auto_time" sequence="358485" subType="x:AUTO">UNAVAILABLE</AccumulatedTime>
+          <AccumulatedTime dataItemId="ctime" timestamp="2024-04-18T15:14:45.592961Z" name="cut_time" sequence="358497" subType="x:CUT">UNAVAILABLE</AccumulatedTime>
+          <AccumulatedTime dataItemId="tcltime" timestamp="2024-04-18T15:14:45.592961Z" name="total_auto_cut_time" sequence="358524" subType="x:TOTALCUTTIME">UNAVAILABLE</AccumulatedTime>
+          <AccumulatedTime dataItemId="yltime" timestamp="2024-04-18T15:14:45.592961Z" name="total_time" sequence="358536" subType="x:TOTAL">UNAVAILABLE</AccumulatedTime>
+        </Samples>
+        <Events>
+          <EmergencyStop dataItemId="estop" timestamp="2024-04-18T15:14:45.592961Z" name="estop" sequence="358500">UNAVAILABLE</EmergencyStop>
+          <PalletId dataItemId="pltnum" timestamp="2024-04-18T15:14:45.592961Z" name="pallet_num" sequence="358515">UNAVAILABLE</PalletId>
+        </Events>
+        <Condition>
+          <Unavailable dataItemId="ccond" timestamp="2024-04-18T15:14:45.592961Z" name="comms_cond" sequence="358488" type="COMMUNICATIONS"/>
+          <Unavailable dataItemId="logic" timestamp="2024-04-18T15:14:45.592961Z" name="logic_cond" sequence="358504" type="LOGIC_PROGRAM"/>
+          <Unavailable dataItemId="system" timestamp="2024-04-18T15:14:45.592961Z" name="system_cond" sequence="358523" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Coolant" name="coolant" componentId="coolant">
+        <Samples>
+          <Concentration dataItemId="concentration" timestamp="2024-04-17T15:10:12.862735Z" name="CONCENTRATION" sequence="8">UNAVAILABLE</Concentration>
+          <Temperature dataItemId="cooltemp" timestamp="2024-04-17T15:10:12.862735Z" name="cooltemp" sequence="10">UNAVAILABLE</Temperature>
+        </Samples>
+        <Condition>
+          <Unavailable dataItemId="coolhealth" timestamp="2024-04-18T15:14:45.592961Z" name="coolant_cond" sequence="358491" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Device" name="Mazak" componentId="d1">
+        <Events>
+          <Availability dataItemId="avail" timestamp="2024-04-18T15:14:45.592961Z" name="avail" sequence="358486">UNAVAILABLE</Availability>
+          <AssetChanged dataItemId="d1_asset_chg" timestamp="2024-04-17T15:10:12.862735Z" sequence="17" assetType="">UNAVAILABLE</AssetChanged>
+          <AssetRemoved dataItemId="d1_asset_rem" timestamp="2024-04-17T15:10:12.862735Z" sequence="18" assetType="">UNAVAILABLE</AssetRemoved>
+          <FunctionalMode dataItemId="functionalmode" timestamp="2024-04-18T06:06:24.240069Z" name="functionalmode" sequence="86">UNAVAILABLE</FunctionalMode>
+        </Events>
+      </ComponentStream>
+      <ComponentStream component="Door" name="door" componentId="door1">
+        <Events>
+          <DoorState dataItemId="door" timestamp="2024-04-18T15:14:45.592961Z" name="doorstate" sequence="358498">UNAVAILABLE</DoorState>
+        </Events>
+      </ComponentStream>
+      <ComponentStream component="Electric" name="electric" componentId="elec">
+        <Condition>
+          <Unavailable dataItemId="electric" timestamp="2024-04-18T15:14:45.592961Z" name="electric_cond" sequence="358499" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Hydraulic" name="hydraulic" componentId="hydraulic">
+        <Condition>
+          <Unavailable dataItemId="hydhealth" timestamp="2024-04-18T15:14:45.592961Z" name="hydra_cond" sequence="358502" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Lubrication" name="lubrication" componentId="lubrication">
+        <Condition>
+          <Unavailable dataItemId="lube" timestamp="2024-04-18T15:14:45.592961Z" name="lubrication_cond" sequence="358505" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Path" name="path" componentId="path1">
+        <Samples>
+          <PathFeedrate dataItemId="pf" timestamp="2024-04-18T15:14:45.592961Z" name="Fact" sequence="358511" subType="ACTUAL">UNAVAILABLE</PathFeedrate>
+        </Samples>
+        <Events>
+          <RotaryVelocityOverride dataItemId="Sovr" timestamp="2024-04-18T15:14:45.592961Z" name="Sovr" sequence="358484">UNAVAILABLE</RotaryVelocityOverride>
+          <Execution dataItemId="exec" timestamp="2024-04-18T15:14:45.592961Z" name="execution" sequence="358501">UNAVAILABLE</Execution>
+          <ChuckState dataItemId="hd1chuckstate" timestamp="2024-04-18T06:06:24.240069Z" sequence="119">UNAVAILABLE</ChuckState>
+          <Line dataItemId="ln" timestamp="2024-04-18T15:14:45.592961Z" name="line" sequence="358503">UNAVAILABLE</Line>
+          <ControllerMode dataItemId="mode" timestamp="2024-04-18T15:14:45.592961Z" name="mode" sequence="358506">UNAVAILABLE</ControllerMode>
+          <PartCount dataItemId="pc" timestamp="2024-04-18T15:14:45.592961Z" name="PartCountAct" sequence="358509">UNAVAILABLE</PartCount>
+          <ProgramComment dataItemId="pcmt" timestamp="2024-04-18T15:14:45.592961Z" name="program_cmt" sequence="358510">UNAVAILABLE</ProgramComment>
+          <ProgramEdit dataItemId="peditmode" timestamp="2024-04-17T15:10:12.862735Z" sequence="34">UNAVAILABLE</ProgramEdit>
+          <ProgramEditName dataItemId="peditname" timestamp="2024-04-17T15:10:12.862735Z" sequence="35">UNAVAILABLE</ProgramEditName>
+          <PathFeedrateOverride dataItemId="pfo" timestamp="2024-04-18T15:14:45.592961Z" name="Fovr" sequence="358512" subType="PROGRAMMED">UNAVAILABLE</PathFeedrateOverride>
+          <PathFeedrateOverride dataItemId="pfr" timestamp="2024-04-18T15:14:45.592961Z" name="Frapidovr" sequence="358513" subType="RAPID">UNAVAILABLE</PathFeedrateOverride>
+          <Program dataItemId="pgm" timestamp="2024-04-18T15:14:45.592961Z" name="program" sequence="358514">UNAVAILABLE</Program>
+          <x:SequenceNumber dataItemId="seq" timestamp="2024-04-18T15:14:45.592961Z" name="sequenceNum" sequence="358518">UNAVAILABLE</x:SequenceNumber>
+          <ProgramComment dataItemId="spcmt" timestamp="2024-04-17T15:10:12.862735Z" name="subprogram_cmt" sequence="47" subType="x:SUB">UNAVAILABLE</ProgramComment>
+          <Program dataItemId="spgm" timestamp="2024-04-17T15:10:12.862735Z" name="subprogram" sequence="48" subType="x:SUB">UNAVAILABLE</Program>
+          <ToolNumber dataItemId="tid" timestamp="2024-04-18T15:14:45.592961Z" name="Tool_number" sequence="358525">UNAVAILABLE</ToolNumber>
+          <x:ToolGroup dataItemId="tid1" timestamp="2024-04-18T15:14:45.592961Z" name="Tool_group" sequence="358526">UNAVAILABLE</x:ToolGroup>
+          <x:ToolSuffix dataItemId="tsuf1" timestamp="2024-04-18T15:14:45.592961Z" name="Tool_suffix" sequence="358528">UNAVAILABLE</x:ToolSuffix>
+          <x:Unit dataItemId="unit" timestamp="2024-04-18T15:14:45.592961Z" name="unitNum" sequence="358529">UNAVAILABLE</x:Unit>
+        </Events>
+        <Condition>
+          <Unavailable dataItemId="motion" timestamp="2024-04-18T15:14:45.592961Z" name="motion_cond" sequence="358507" type="MOTION_PROGRAM"/>
+          <Unavailable dataItemId="path_system" timestamp="2024-04-18T15:14:45.592961Z" name="path_system" sequence="358508" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Pneumatic" name="pneumatic" componentId="pneumatic">
+        <Condition>
+          <Unavailable dataItemId="pneucond" timestamp="2024-04-18T15:14:45.592961Z" name="pneu_cond" sequence="358516" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Linear" name="X" componentId="x">
+        <Samples>
+          <AxisFeedrate dataItemId="xf" timestamp="2024-04-18T15:14:45.592961Z" name="Xfrt" sequence="358531">UNAVAILABLE</AxisFeedrate>
+          <Load dataItemId="xl" timestamp="2024-04-18T15:14:45.592961Z" name="Xload" sequence="358532">UNAVAILABLE</Load>
+          <Position dataItemId="xpm" timestamp="2024-04-18T15:14:45.592961Z" name="Xabs" sequence="358533" subType="ACTUAL">UNAVAILABLE</Position>
+          <Position dataItemId="xpw" timestamp="2024-04-18T15:14:45.592961Z" name="Xpos" sequence="358534" subType="ACTUAL">UNAVAILABLE</Position>
+        </Samples>
+        <Events>
+          <AxisState dataItemId="xaxisstate" timestamp="2024-04-18T15:14:45.592961Z" sequence="358530">UNAVAILABLE</AxisState>
+        </Events>
+        <Condition>
+          <Unavailable dataItemId="xt" timestamp="2024-04-18T15:14:45.592961Z" name="Xtravel" sequence="358535" type="POSITION"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Linear" name="Z" componentId="z">
+        <Samples>
+          <AxisFeedrate dataItemId="zf" timestamp="2024-04-18T15:14:45.592961Z" name="Zfrt" sequence="358538">UNAVAILABLE</AxisFeedrate>
+          <Load dataItemId="zl" timestamp="2024-04-18T15:14:45.592961Z" name="Zload" sequence="358539">UNAVAILABLE</Load>
+          <Position dataItemId="zpm" timestamp="2024-04-18T15:14:45.592961Z" name="Zabs" sequence="358540" subType="ACTUAL">UNAVAILABLE</Position>
+          <Position dataItemId="zpw" timestamp="2024-04-18T15:14:45.592961Z" name="Zpos" sequence="358541" subType="ACTUAL">UNAVAILABLE</Position>
+        </Samples>
+        <Events>
+          <AxisState dataItemId="zaxisstate" timestamp="2024-04-18T15:14:45.592961Z" sequence="358537">UNAVAILABLE</AxisState>
+        </Events>
+        <Condition>
+          <Unavailable dataItemId="zt" timestamp="2024-04-18T15:14:45.592961Z" name="Ztravel" sequence="358542" type="POSITION"/>
+        </Condition>
+      </ComponentStream>
+    </DeviceStream>
+  </Streams>
+</MTConnectStreams>
+
